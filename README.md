@@ -1,6 +1,8 @@
 bc-maybe
 ========
 
+![](https://codeship.com/projects/e9cd5800-91a6-0133-050f-4e9fb4b2d645/status?branch=master)
+
 bc-maybe is a javascript implementation of something similar to Haskells Maybe monad
 
 ```haskell
