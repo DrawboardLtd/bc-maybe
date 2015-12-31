@@ -1,16 +1,12 @@
-import { Just, isJust } from "./Just"
-import { Nope, isNope } from "./Nope"
-import { pipe } from "./pipe"
+import * as J from "./Just"
+import * as N from "./Nope"
+import * as P from "./pipe"
 
-function isMaybe (thing) {
-  return isJust(thing) || isNope(thing)
-}
+export var Just = J.Just
+export var Nope = N.Nope
 
-export default {
-  Just,
-  isJust,
-  Nope,
-  isNope,
-  isMaybe,
-  pipe,
-}
+export var isJust  = J.isJust
+export var isNope  = N.isNope
+export var isMaybe = thing => isJust(thing) || isMaybe(thing)
+
+export var pipe = P.pipe
